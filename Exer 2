@@ -1,0 +1,17 @@
+public class Exercicio2 {
+
+    public static void novaPalavra(String palavra) {
+        if (palavra.length() < 8) {
+            System.out.println("Erro!");
+            return;
+        }
+
+        String nova = palavra.substring(0, 2) + palavra.substring(palavra.length() - 2);
+        System.out.println("Nova palavra: " + nova);
+    }
+
+    public static void main(String[] args) {
+        novaPalavra("computador");
+        novaPalavra("casa");
+    }
+}
