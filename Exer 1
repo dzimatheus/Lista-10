@@ -1,0 +1,19 @@
+public class Exercicio1{
+
+    public static void analise(String texto){
+        
+        System.out.println("Número de caracteres: " + texto.length());
+        int vogal = 0;
+        char c;
+        for(int i = 0; i < texto.length(); i++){
+            c = texto.charAt(i);
+            if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ){
+                vogal++;
+            }
+        }
+        System.out.println("Número de vogais: " + vogal);
+    }
+    public static void main(String[] args) {
+        analise("Texto");
+    }
+}
