@@ -1,0 +1,12 @@
+public class Exercicio3 {
+
+    public static void compararPalavras(String palavra1, String palavra2) {
+        System.out.println("Usando equals: " + palavra1.equals(palavra2));
+        System.out.println("Usando equalsIgnoreCase: " + palavra1.equalsIgnoreCase(palavra2));
+    }
+
+    public static void main(String[] args) {
+        compararPalavras("Java", "java");
+        compararPalavras("Curso", "curso");
+    }
+}
